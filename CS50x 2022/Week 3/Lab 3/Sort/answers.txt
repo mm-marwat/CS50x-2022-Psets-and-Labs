@@ -1,0 +1,54 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Each sorted dataset is a worst case when applying Bubble-Sort and Selection-Sort. This is because each of these two algorithms have to go throgh
+the whole process but Bubble Sort applies its process just one time (i.e. Sorted dataset is best case when applying Bubble-Sort and the Omiga is (n).
+indicated in the time-data below, In every sorted dataset the Sort! takes less time than others so it is the Bubble-Sort algorithm.
+
+sort2 uses: Merge Sort
+
+How do you know?: Each random dataset is a worst case when applying either of the three sorting algotims. However, it is not as worst for Merge-Sort as it is
+for the other two; becasue the O of Merger-Sort is (n log2 n) and the O for the other two is (square of n). This mean that while sorting a random dataset the
+Merge-Sort should take less time as it is also indicated in the time-data below. In every random dataset the Sort2 takes less time than others so it is the
+Merge-Sort algorithm.
+
+sort3 uses: Selection Sort
+
+How do you know?: Knowing that the Sort1 is Bubble-Sort and Sort2 is Merge-Sort I can infer that Sort3 is Selection-Sort. (LOL)
+
+
+
+
+
+
+----------------------------------------- 5000 Numbers ------------------------------------------------
+
+./sort1 random5000.txt                ./sort2 random5000.txt                   ./sort3 random5000.txt
+real    0m0.142s                      real    0m0.029s                         real    0m0.066s
+
+./sort1 reversed5000.txt              ./sort2 reversed5000.txt                 ./sort3 reversed5000.txt
+real    0m0.075s                      real    0m0.031s                         real    0m0.052s
+
+./sort1 sorted5000.txt                ./sort2 sorted5000.txt                   ./sort3 sorted5000.txt
+real    0m0.034s                      real    0m0.080s                         real    0m0.061s
+
+----------------------------------------- 10000 Numbers ------------------------------------------------
+
+./sort1 random10000.txt               ./sort2 random10000.txt                 ./sort3 random10000.txt
+real    0m0.359s                      real    0m0.058s                         real    0m0.170s
+
+./sort1 reversed10000.txt             ./sort2 reversed10000.txt               ./sort3 reversed10000.txt
+real    0m0.277s                      real    0m0.082s                         real    0m0.176s
+
+./sort1 sorted10000.txt               ./sort2 sorted10000.txt                 ./sort3 sorted10000.txt
+real    0m0.071s                      real    0m0.076s                         real    0m0.217s
+
+----------------------------------------- 50000 Numbers -------------------------------------------------
+
+./sort1 random50000.txt               ./sort2 random50000.txt                 ./sort3 random50000.txt
+real    0m15.200s                     real    0m10.999s                       real    0m12.649s
+
+./sort1 reversed50000.txt             ./sort2 reversed50000.txt               ./sort3 reversed50000.txt
+real    0m23.346s                     real    0m16.854s                       real    0m14.218s
+
+./sort1 sorted50000.txt               ./sort2 sorted50000.txt                 ./sort3 sorted50000.txt
+real    0m6.266s                      real    0m15.093s                        real    0m19.207s
